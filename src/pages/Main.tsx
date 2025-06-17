@@ -7,7 +7,7 @@ function Main() {
       <img src={pinching} alt="pinching" />
       <h1 className="text-3xl font-bold">Do you love me?</h1>
       <div className="flex gap-4 mb-26">
-        <a href="/yes.html">
+        <a href={`${import.meta.env.BASE_URL}yes.html`}>
           <button className="bg-red-500 rounded-full w-15 px-3 py-1 drop-shadow-red-500 drop-shadow-xl hover:bg-red-500/70 transition-colors duration-300">
             Yes
           </button>
