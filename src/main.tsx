@@ -7,7 +7,7 @@ import { Yes } from "./Yes.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/answer-my-love">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/yes" element={<Yes />} />
