@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: "src/main.tsx",
-        yes: "src/yes.tsx",
+        main: "index.html",
+        yes: "yes.html",
       },
     },
   },
