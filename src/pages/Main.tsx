@@ -1,18 +1,17 @@
 import { useState } from "react";
 import pinching from "/cute-sweet.gif";
-import { Link } from "react-router-dom";
 
-function App() {
+function Main() {
   return (
     <div className="flex items-center justify-center flex-col h-screen gap-2">
       <img src={pinching} alt="pinching" />
       <h1 className="text-3xl font-bold">Do you love me?</h1>
       <div className="flex gap-4 mb-26">
-        <Link to="/yes">
+        <a href="/yes.html">
           <button className="bg-red-500 rounded-full w-15 px-3 py-1 drop-shadow-red-500 drop-shadow-xl hover:bg-red-500/70 transition-colors duration-300">
             Yes
           </button>
-        </Link>
+        </a>
         <div className="w-15">
           <NoButton />
         </div>
@@ -21,7 +20,7 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
 
 function NoButton() {
   const [top, setTop] = useState(0);
